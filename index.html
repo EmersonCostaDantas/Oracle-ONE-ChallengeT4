@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" type="text/css" href="./src/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+
+    <title>DecodificadorT4</title>
+</head>
+
+<body>
+    <main>
+        <div id="title">
+            <header>
+                <img id="image" src="./src/img/Logo.png" id="logoAlura" alt="alura-logo">
+            </header>
+            <input type="text" id="entrance" placeholder="Digite seu texto" value="">
+        </div>
+
+        <section id="btns">
+            <span id="alertIcon">
+                <p>
+                    <img src="./src/img/Vector.png" alt="alert">Apenas letras minúsculas e sem acento
+                </p>
+            </span>
+                <button id="btn1" onclick="encode()">Criptografar</button>
+                <button id="btn2" onclick="decode()">Descriptografar</button>
+        </section>
+
+        <section id="outputSection">
+            <img src="./src/img/search.png">
+            <div id="out">
+                <p id="output">Nenhuma mensagem encontrada</p>
+                <textarea name="" id="outputText" cols="30" rows="10" maxlength="100px" value=""
+                    placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+                <button id="copyBtn" onclick="copy()">Copiar Texto</button>
+            </div>
+        </section>
+        
+
+        <footer id="footer">
+            <p id="name"> &copy; Developed by Emerson Costa Dantas</p>
+            <p><a href="https://www.linkedin.com/in/emerson-costa-dantas-9b32aa219/" target="_blank">Linkedin</a> </p>
+            <p><a href="https://github.com/EmersonCostaDantas" target="_blank">Github</a></p>
+        </footer>
+    </main>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
